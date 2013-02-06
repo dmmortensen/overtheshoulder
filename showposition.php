@@ -10,6 +10,8 @@
 		<script src="js/main.js"></script>
 	</head>
 	<body>
+		<button class="stop" type="button">STOP TRACKING</button>
+		<button class="start" type="button">START TRACKING</button>
 		<div class="showposition"></div>
 	</body>
 </html>
