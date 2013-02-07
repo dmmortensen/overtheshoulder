@@ -26,14 +26,14 @@ if(window.attachEvent) {
 }*/
 
 
-var iframe;
+var gif;
 function createIframe(){
 
-	iframe = document.createElement('iframe');
-	iframe.setAttribute('src', 'scripts/iframe.php?x='+mouseLoc.x+"&y="+mouseLoc.y);
-	console.log(iframe);
-	document.getElementById('overshoulderiframe').innerHTML="";
-	document.getElementById('overshoulderiframe').appendChild(iframe);
+	gif = document.createElement('img');
+	gif.setAttribute('src', 'shoulder.gif?x='+mouseLoc.x+"&y="+mouseLoc.y);
+	console.log(gif);
+	document.getElementById('overshoulder').innerHTML="";
+	document.getElementById('overshoulder').appendChild(gif);
 }
 
 
