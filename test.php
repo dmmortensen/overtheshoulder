@@ -4,7 +4,8 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-		<script src="js/main.js"></script>
+		<script src="js/iframe.js"></script>
+		<div id='overshoulderiframe' style="display:none"></div>
 	</head>
 	<body>
 		<div align="center">

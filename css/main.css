@@ -3,12 +3,10 @@
 	height:600px;
 	border-style:inset;
 	border-width:1px;
+	background: #0000CC;
 }
 .showposition{
-	width:800px;
-	height:600px;
-	border-style:inset;
-	border-width:1px;
+
 }
 .cursor{
 	position: absolute;

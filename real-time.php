@@ -17,4 +17,13 @@
 	
 	}
 	
+	if(isset($_POST['url'])){
+		mysql_select_db("overshoulder", $con);
+		mysql_query("TRUNCATE TABLE currentsite;");
+		$insert = mysql_query("INSERT INTO currentsite VALUES (NULL, '".$_POST['url']."');");
+		if(!$insert)
+			echo mysql_error();
+		echo "INSERT INTO currentsite VALUES (NULL, '".$_POST['url']."');";
+	}
+	
 	require_once('scripts/global-footer-functions.php');
