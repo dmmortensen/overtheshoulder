@@ -5,11 +5,11 @@
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 		<script src="js/iframe.js"></script>
-		<div id='overshoulder'></div>
 	</head>
 	<body>
 		<div align="center">
-<h1>Welcome to [YOUR-WEBSITE-NAME]</h1>
+<h1>Welcome to [test.php]</h1>
+<a href="index.php">GO HOME</a>
 <br />
 <p>Hello, our web site is under construction.</p>
 <p>It would be ready by [DATE]</p>

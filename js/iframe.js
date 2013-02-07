@@ -1,44 +1,35 @@
+
+if(document.URL != 'http://172.16.81.146/overtheshoulder/showposition.php' && document.URL != 'http://localhost/overtheshoulder/showposition.php'){
 window.onmousemove=getPos;
+}
 var mouseLoc={'x':0,'y':0};
-function getPos(){
-	var e = window.event;
-	if(Math.abs(e.clientX -(mouseLoc.x)) > 30 || Math.abs(e.clientY - (mouseLoc.y)) > 30){
+function getPos(e){
+	// if(Math.abs(e.clientX -(mouseLoc.x)) > (window.outerWidth*.02) || Math.abs(e.clientY - (mouseLoc.y)) > (window.outerHeight*.02)){
 		mouseLoc= {'x' : e.clientX, 'y' : e.clientY};
 		console.log('x='+mouseLoc.x+'y='+mouseLoc.y);
 		createIframe();
-	}
+	// }
 }
-/*
-
-if(window.attachEvent) {
-    window.attachEvent('onload', createIframe);
-} else {
-    if(window.onload) {
-        var curronload = window.onload;
-        var newonload = function() {
-            curronload();
-            createIframe();
-        };
-        window.onload = newonload;
-    } else {
-        window.onload = createIframe;
-    }
-}*/
-
 
 var gif;
+var div;
+var createdDiv =false;
 function createIframe(){
-
-	gif = document.createElement('img');
-	gif.setAttribute('src', 'shoulder.gif?x='+mouseLoc.x+"&y="+mouseLoc.y);
-	console.log(gif);
-	document.getElementById('overshoulder').innerHTML="";
-	document.getElementById('overshoulder').appendChild(gif);
+	
+	
+	if(createdDiv == false){
+		div = document.createElement('div');
+		div.setAttribute('style', 'position:fixed');
+		div.setAttribute('id', 'overshoulder');
+		document.getElementsByTagName('body')[0].appendChild(div);
+		createdDiv = true;
+	}
+	
+	if(createdDiv == true){
+		gif = document.createElement('img');
+		gif.setAttribute('src', 'shoulder.gif?x='+(mouseLoc.x / document.getElementsByTagName('html')[0].offsetWidth*100000)+"&y="+(mouseLoc.y / document.getElementsByTagName('html')[0].offsetHeight*100000)+"&u="+document.URL);
+		document.getElementById('overshoulder').innerHTML="";
+		document.getElementById('overshoulder').appendChild(gif);
+	}
 }
 
-
-$(document).ready(function(){
-// document.body.onmousemove=getPos();
-	// var pos = getPos();
-	// console.log(pos.x);
-});

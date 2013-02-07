@@ -9,6 +9,7 @@
 	<body>
 		<div align="center">
 <h1>Welcome to [YOUR-WEBSITE-NAME]</h1>
+<a href="test.php">GO TO TEST</a>
 <br />
 <p>Hello, our web site is under construction.</p>
 <p>It would be ready by [DATE]</p>

@@ -1,5 +1,5 @@
 
 
 RewriteEngine On
-RewriteRule ^(.+).gif$  /overtheshoulder/scripts/iframe.php? [L,NC,QSA]
+RewriteRule ^(.+).gif$  /overtheshoulder/scripts/iframe.php? [L,NC,QSA,B]
 

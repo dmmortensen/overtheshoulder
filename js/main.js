@@ -5,7 +5,7 @@ var xp, yp;
 var mouseLoc={'x':0,'y':0};
 var pageSent=false;
 
-if(document.URL != 'http://localhost/overtheshoulder/showposition.php'){
+if(document.URL != 'http://172.16.81.146/overtheshoulder/showposition.php' && document.URL != 'http://localhost/overtheshoulder/showposition.php'){
 $(document).ready(function(){
 	console.log('entered');
 	if(pageSent == false){
