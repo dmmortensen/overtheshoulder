@@ -4,7 +4,7 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-		<script src="js/main.js"></script>
+		<script src="js/iframe.js"></script>
 	</head>
 	<body>
 		<div align="center">
@@ -21,7 +21,6 @@
 </p>
 </div>
 		<div class="content"></div>
-		<div class="counter"></div>
 	</body>
 	
 </html>

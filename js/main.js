@@ -1,4 +1,4 @@
-var count=1;
+// var count=1;
 var xp, yp;
 
 
@@ -25,8 +25,8 @@ $(document).ready(function(){
 	$('html').on('mousemove', function(e){
 		if(Math.abs(e.pageX -(mouseLoc.x)) > 30 || Math.abs(e.pageY - (mouseLoc.y)) > 30){
 			mouseLoc={'x':e.pageX, 'y':e.pageY};
-			count++;
-			$('.counter').html(count);
+			// count++;
+			// $('.counter').html(count);
 			$.ajax({
 				type: 'POST',
 				url: 'real-time.php',

@@ -21,7 +21,7 @@
 </p>
 </div>
 		<div class="content"></div>
-		<div class="counter"></div>
+		<!-- <div class="counter"></div> -->
 	</body>
 	
 </html>

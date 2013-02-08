@@ -10,6 +10,7 @@
 }
 .cursor{
 	position: absolute;
+	float:left;
 }
 div.overshoulder{
 	position:fixed;

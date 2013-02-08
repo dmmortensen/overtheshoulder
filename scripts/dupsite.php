@@ -10,7 +10,7 @@ if(isset($_POST['url'])){
 	
 	while($row = mysql_fetch_array($getUrl)){
 		if($url != $row['url'])
-			echo readfile($row['url']);
+			echo file_get_contents($row['url']);
 		else {
 			echo FALSE;
 		}
